@@ -1,0 +1,36 @@
+./test/a
+---
+test
+
+
+---
+./test/b
+---
+update again
+
+
+---
+./test/c
+---
+update third
+
+
+---
+./test/d
+---
+update fourth
+
+
+---
+./test/e
+---
+update fourth
+
+
+---
+./test/f
+---
+update fourth
+
+
+---

@@ -1,0 +1,27 @@
+"test/a":
+  cmd: echo "test" > $FAC_PATH
+
+"test/b":
+  cmd: cat test/a > $FAC_PATH
+  dependencies:
+    - test/a
+
+"test/c":
+  cmd: cat test/b > $FAC_PATH
+  dependencies:
+    - test/b
+
+"test/d":
+  cmd: ln -sf c test/d
+  dependencies:
+    - test/c
+
+"test/e":
+  cmd: cat test/d > $FAC_PATH
+  dependencies:
+    - test/d
+
+"test/f":
+  cmd: cat test/e > $FAC_PATH
+  dependencies:
+    - test/e
