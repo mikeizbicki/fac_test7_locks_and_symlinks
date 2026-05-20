@@ -1,27 +1,27 @@
-"test/a":
+"build/a":
   cmd: echo "test" > $FAC_PATH
 
-"test/b":
-  cmd: cat test/a > $FAC_PATH
+"build/b":
+  cmd: cat build/a > $FAC_PATH
   dependencies:
-    - test/a
+    - build/a
 
-"test/c":
-  cmd: cat test/b > $FAC_PATH
+"build/c":
+  cmd: cat build/b > $FAC_PATH
   dependencies:
-    - test/b
+    - build/b
 
-"test/d":
-  cmd: ln -sf c test/d
+"build/d":
+  cmd: ln -sf c build/d
   dependencies:
-    - test/c
+    - build/c
 
-"test/e":
-  cmd: cat test/d > $FAC_PATH
+"build/e":
+  cmd: ln -sf d build/e
   dependencies:
-    - test/d
+    - build/d
 
-"test/f":
-  cmd: cat test/e > $FAC_PATH
+"build/f":
+  cmd: cat build/e > $FAC_PATH
   dependencies:
-    - test/e
+    - build/e

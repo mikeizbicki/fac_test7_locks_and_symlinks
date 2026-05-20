@@ -1,36 +1,36 @@
 build/a
 ---
-test
+unlock
 
 
 ---
 build/b
 ---
-update again
+unlock
 
 
 ---
 build/c
 ---
-update
+unlock
 
 
 ---
 build/d
 ---
-update
+unlock
 
 
 ---
 build/e
 ---
-update
+unlock
 
 
 ---
 build/f
 ---
-update
+unlock
 
 
 ---

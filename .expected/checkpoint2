@@ -1,28 +1,34 @@
-./test/a
+build/a
 ---
 test
 
 
 ---
-./test/b
+build/b
 ---
 update
 
 
 ---
-./test/c
+build/c
 ---
 update
 
 
 ---
-./test/e
+build/d
 ---
 update
 
 
 ---
-./test/f
+build/e
+---
+update
+
+
+---
+build/f
 ---
 update
 
